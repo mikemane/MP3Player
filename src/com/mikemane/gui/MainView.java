@@ -428,6 +428,7 @@ public class MainView extends JFrame implements ActionListener {
     }
 
     private void importSavedPlaylists() {
+      if(Files.exists(Paths.get(DIRECTORY_LOCATION))){
         ArrayList<Playlist> lop = PlaylistIO.checkForFilesAtStart(DIRECTORY_LOCATION);
         if (lop != null) {
             playlistModel.addPlaylists(lop);
@@ -436,6 +437,10 @@ public class MainView extends JFrame implements ActionListener {
         }
         playlistModel.fireTableDataChanged();
         //playlistTable.repaint();
+      }else {
+        JOptionPane.showMessageDialog(this, "");
+      }
+        
     }
 
     private JRadioButtonMenuItem addMenuRadio(String text, boolean x) {

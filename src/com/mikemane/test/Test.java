@@ -25,10 +25,9 @@ public class Test {
                 try {
                     UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
                 } catch (Exception ex) {
-                    ex.printStackTrace();
+                    System.out.println(ex.getCause() + " Message " + ex.getMessage());
                 }
             }
-
             SwingUtilities.invokeLater(() -> {
                 MainView v = new MainView();
             });
