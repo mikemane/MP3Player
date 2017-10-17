@@ -21,3 +21,7 @@ Integreate with Spotify.
 
 
 Last Maintained @2014
+
+## Demo
+
+![](https://github.com/mikemane/MP3Player/blob/master/Mp3Player.gif)
