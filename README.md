@@ -24,4 +24,4 @@ Last Maintained @2014
 
 ## Demo
 
-![](https://github.com/mikemane/MP3Player/blob/master/Mp3Player.gif)
+![Mp3 Player Example](https://github.com/mikemane/MP3Player/blob/master/Mp3Player.gif)
